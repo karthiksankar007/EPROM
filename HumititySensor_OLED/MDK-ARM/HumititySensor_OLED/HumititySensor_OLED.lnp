@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"humititysensor_oled\startup_stm32f103xb.o"
+"humititysensor_oled\fonts.o"
+"humititysensor_oled\ssd1306.o"
+"humititysensor_oled\main.o"
+"humititysensor_oled\stm32f1xx_it.o"
+"humititysensor_oled\stm32f1xx_hal_msp.o"
+"humititysensor_oled\stm32f1xx_hal_gpio_ex.o"
+"humititysensor_oled\stm32f1xx_hal_i2c.o"
+"humititysensor_oled\stm32f1xx_hal.o"
+"humititysensor_oled\stm32f1xx_hal_rcc.o"
+"humititysensor_oled\stm32f1xx_hal_rcc_ex.o"
+"humititysensor_oled\stm32f1xx_hal_gpio.o"
+"humititysensor_oled\stm32f1xx_hal_dma.o"
+"humititysensor_oled\stm32f1xx_hal_cortex.o"
+"humititysensor_oled\stm32f1xx_hal_pwr.o"
+"humititysensor_oled\stm32f1xx_hal_flash.o"
+"humititysensor_oled\stm32f1xx_hal_flash_ex.o"
+"humititysensor_oled\stm32f1xx_hal_exti.o"
+"humititysensor_oled\stm32f1xx_hal_tim.o"
+"humititysensor_oled\stm32f1xx_hal_tim_ex.o"
+"humititysensor_oled\system_stm32f1xx.o"
+--strict --scatter "HumititySensor_OLED\HumititySensor_OLED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HumititySensor_OLED.map" -o HumititySensor_OLED\HumititySensor_OLED.axf
